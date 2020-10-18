@@ -1,0 +1,26 @@
+#spring:
+#  jpa:
+#    database: mysql
+#    show-sql: true
+#    generate-ddl: false
+#    hibernate:
+#      ddl-auto: none
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        format_sql: true
+#        type: trace
+
+multitenancy:
+  mtapp:
+    master:
+      datasource:
+        url: jdbc:mysql://localhost:3306/master_db?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false
+        username: root
+        password:
+        driverClassName: com.mysql.cj.jdbc.Driver
+        connectionTimeout: 20000
+        maxPoolSize: 250
+        idleTimeout: 300000
+        minIdle: 5
+        poolName: masterdb-connection-pool

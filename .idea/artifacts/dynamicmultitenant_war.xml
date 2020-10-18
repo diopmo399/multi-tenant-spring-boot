@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dynamicmultitenant:war">
+    <output-path>$PROJECT_DIR$/dynamicmultitenant/target</output-path>
+    <root id="archive" name="dynamicmultitenant-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="dynamicmultitenant:war exploded" />
+    </root>
+  </artifact>
+</component>
